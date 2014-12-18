@@ -22,3 +22,6 @@ Two Sum (Hash table)
 
 Find Peak Element (Divide and Conquer)
 
+Fraction to Recurring Decimal(Hash table)
+
+Compare Version Numbers(String)
