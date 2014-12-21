@@ -10,20 +10,20 @@ My blog(chinese):http://blog.csdn.net/u012162613
 
 
 *********************
-Problem-> (Folder)
+Problem--> (Folder)
 *********************
-Reverse Integer ->(Math)
+Reverse Integer -->(Math)
 
-Reverse Words in a String ->(String)
+Reverse Words in a String -->(String)
 
-Intersection of Two Linked Lists ->(Linked List)
+Intersection of Two Linked Lists -->(Linked List)
 
-Two Sum ->(Hash table)
+Two Sum -->(Hash table)
 
-Find Peak Element ->(Divide and Conquer)
+Find Peak Element -->(Divide and Conquer)
 
-Fraction to Recurring Decimal->(Hash table)
+Fraction to Recurring Decimal-->(Hash table)
 
-Compare Version Numbers->(String)
+Compare Version Numbers-->(String)
 
-Excel Sheet Column Title->(Math)
+Excel Sheet Column Title-->(Math)
