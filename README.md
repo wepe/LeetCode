@@ -28,3 +28,4 @@ Reverse Words in a String -->(String)
 
 Two Sum -->(Hash table)
 
+Majority Element-->(Hash table)
