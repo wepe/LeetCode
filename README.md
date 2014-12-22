@@ -22,10 +22,14 @@ Fraction to Recurring Decimal-->(Hash table)
 
 Intersection of Two Linked Lists -->(Linked List)
 
+Majority Element-->(Hash table)
+
 Reverse Integer -->(Math)
 
 Reverse Words in a String -->(String)
 
 Two Sum -->(Hash table)
 
-Majority Element-->(Hash table)
+
+
+
