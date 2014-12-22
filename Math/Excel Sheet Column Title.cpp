@@ -17,3 +17,18 @@ string convertToTitle(int n) {
         }
         return result;
     }
+
+
+
+/*
+Another good solution,better than mine:
+string convertToTitle(int n) {
+        string ans = "";
+        while(n) {
+            ans = string(1, ((n - 1) % 26 + 'A')) + ans;
+            n = (n - 1) / 26;
+        }
+        return ans;
+    }
+
+*/
