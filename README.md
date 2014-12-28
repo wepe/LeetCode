@@ -16,6 +16,8 @@ Compare Version Numbers-->(String)
 
 Excel Sheet Column Title-->(Math)
 
+Excel Sheet Column Number-->(Math)
+
 Find Peak Element -->(Divide and Conquer)
 
 Fraction to Recurring Decimal-->(Hash table)
