@@ -22,6 +22,8 @@ Find Peak Element -->(Divide and Conquer)
 
 Fraction to Recurring Decimal-->(Hash table)
 
+Factorial Trailing Zeroes-->(Math)
+
 Intersection of Two Linked Lists -->(Linked List)
 
 Majority Element-->(Hash table)
