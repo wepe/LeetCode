@@ -1,0 +1,33 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 关于作者
+author: 
+  name: wepon
+  email: masterwepon@163.com
+  link: http://2hwp.com
+  weibo: 
+  github: http://github.com/wepe
+
+# 关于本站
+title: LeetCode全解
+description: LeetCode全解
+url: http://github.com/wepe
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon.ico
+avatar: 
+favicon: 
+
+# google analytics 设置
+ga:
+  id: 
+  url: 
+
+# disqus 设置
+disqus:
+  shortname: 
