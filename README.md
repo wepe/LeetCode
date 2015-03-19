@@ -9,26 +9,33 @@ My blog(chinese):http://blog.csdn.net/u012162613
 
 
 
-###Problem--> (Folder)
+Problem----(Folder)
+---
 
-1.Two Sum -->(Hash table)
+1.Two Sum ----(Hash table)  **[code]()**
 
-7.Reverse Integer -->(Math)
+7.Reverse Integer ----(Math)  **[code]()**
 
-151.Reverse Words in a String -->(String)
+151.Reverse Words in a String ----(String)  **[code]()**
 
-160.Intersection of Two Linked Lists -->(Linked List)
+160.Intersection of Two Linked Lists ----(Linked List)  **[code]()**
 
-162.Find Peak Element -->(Divide and Conquer)
+162.Find Peak Element----(Divide and Conquer)  **[code]()**
 
-165.Compare Version Numbers-->(String)
+165.Compare Version Numbers----(String)  **[code]()**
 
-166.Fraction to Recurring Decimal-->(Hash table)
+166.Fraction to Recurring Decimal----(Hash table) **[code]()**
 
-168.Excel Sheet Column Title-->(Math)
+168.Excel Sheet Column Title----(Math) **[code]()**
 
-169.Majority Element-->(Hash table)
+169.Majority Element----(Hash table) **[code]()**
 
-171.Excel Sheet Column Number-->(Math)
+171.Excel Sheet Column Number----(Math) **[code]()**
 
-172.Factorial Trailing Zeroes-->(Math)
+172.Factorial Trailing Zeroes----(Math) **[code]()**
+
+189.Rotate Array ----(Array) **[code]()**
+ 
+190.Reverse Bits ----(Others) **[code]()**
+
+191.Number of 1 Bits ----(Others) **[code]()**
