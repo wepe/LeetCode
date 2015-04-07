@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>75 Sort Colors - LeetCode全解</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LeetCode全解</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../191 Number of 1 Bits">191 Number of 1 Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../190 Reverse Bits">190 Reverse Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../189 Rotate Array">189 Rotate Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../172 Factorial Trailing Zeroes">172 Factorial Trailing Zeroes</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../171 Excel Sheet Column Number">171 Excel Sheet Column Number</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../169 Majority Element">169 Majority Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../168 Excel Sheet Column Title">168 Excel Sheet Column Title</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../166 Fraction to Recurring Decimal">166 Fraction to Recurring Decimal</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../165 Compare Version Numbers">165 Compare Version Numbers</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../164 Maximum Gap">164 Maximum Gap</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../162 Find Peak Element">162 Find Peak Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../160 Intersection of Two Linked Lists">160 Intersection of Two Linked Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../151 Reverse Words in a String">151 Reverse Words in a String</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../148 Sort List">148 Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../147 Insertion Sort List">147 Insertion Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../80 Remove Duplicates from Sorted Array II">80 Remove Duplicates from Sorted Array II</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">75 Sort Colors</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../41 First Missing Positive">41 First Missing Positive</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../26 Remove Duplicates from Sorted Array">26 Remove Duplicates from Sorted Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../23 Merge k Sorted Lists">23 Merge k Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../21 Merge Two Sorted Lists">21 Merge Two Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../7 Reverse Integer">7 Reverse Integer</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../4 Median of Two Sorted Arrays">4 Median of Two Sorted Arrays</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>75 Sort Colors</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h2 id="1">1、题目</h2>
+<p>Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.</p>
+<p>Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.</p>
+<p>Note:
+You are not suppose to use the library's sort function for this problem. </p>
+<h2 id="2wepon">2、wepon的解法</h2>
+<h3 id="21">2.1 解析</h3>
+<p>题目大意就是将数组按0，1，2的顺序排好，如{0,1,2,2,1,1,0,0,2}排成{0,0,0,1,1,1,2,2,2}。</p>
+<p>方法有很多种，one pass的，two pass的，直接调用库函数解决的，详见下面代码及分析。</p>
+<h3 id="22">2.2 代码</h3>
+<p><strong>C++</strong></p>
+<pre><code>//最简单的方法，就是先遍历一轮，统计0、1、2的个数，然后遍历第二轮，置相应个数的0、1、2。
+class Solution {
+public:
+    void sortColors(int A[], int n) {
+        int count[3]={0,0,0};
+        for(int i=0;i&lt;n;i++)
+          count[A[i]]++;
+        int i=0;
+        while(count[0]--) A[i++]=0;
+        while(count[1]--) A[i++]=1;
+        while(count[2]--) A[i++]=2;
+    }
+};
+
+//调用库函数，快速排序的partition()，先按0分割，再按1分割
+class Solution {
+public:
+    void sortColors(int A[], int n) {
+      partition( partition(A,A+n,bind1st(equal_to&lt;int&gt;(),0)),A+n,bind1st(equal_to&lt;int&gt;(),1));
+    }
+};
+
+//题目要求是one pass，下面这个方法也不是严格的one pass
+class Solution {
+public:
+/*
+双指针，i指向头，j指向尾
+当A[i]等于0，i++
+当A[i]等于1，则置为0，并且记录1的个数的num加一
+当A[i]等于2，则swap(A[i],A[j]),这样确保j处的元素是2，然后j--
+循环这个过程，直到i==j跳出循环
+此时还需判断A[j]是否为0，如果不为0，则该位的元素不用管，还是其原来的数（1或者2），然后从j-1处，开始往后置num个1
+*/
+    void sortColors(int A[], int n) {
+        int i=0,j=n-1,num=0;
+        while(i&lt;j)
+        {
+            if(A[i]==0) i++;
+            else if(A[i]==1)  { num++;A[i]=0; i++;}
+            else  {int tmp=A[j];A[j]=A[i];A[i]=tmp;j--;}
+        }
+        if(A[j]!=0)  j--;
+        while(num--) A[j--]=1;
+    }
+};
+
+
+// one pass，设置下标red=0，blue=n-1
+//遍历一轮，发现0则与A[red]交换，red++，i++；发现2则与A[blue]交换，blue--
+class Solution {
+public:
+    void sortColors(int A[], int n) {
+        int red=0,blue=n-1;
+        for(int i=0;i&lt;blue+1;)
+        {
+            if(A[i]==0) swap(A[i++],A[red++]);  //交换过后，A[i]肯定不是2，因为2肯定已经被交换到后面。只能是0或者1，可以不用管，直接i++
+            else if(A[i]==2) swap(A[i],A[blue--]);
+            else i++;
+        }
+    }
+};
+</code></pre>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../41 First Missing Positive" class="btn btn-neutral float-right" title="41 First Missing Positive"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../80 Remove Duplicates from Sorted Array II" class="btn btn-neutral" title="80 Remove Duplicates from Sorted Array II"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../80 Remove Duplicates from Sorted Array II" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../41 First Missing Positive" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4 Median of Two Sorted Arrays - LeetCode全解</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LeetCode全解</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../191 Number of 1 Bits">191 Number of 1 Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../190 Reverse Bits">190 Reverse Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../189 Rotate Array">189 Rotate Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../172 Factorial Trailing Zeroes">172 Factorial Trailing Zeroes</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../171 Excel Sheet Column Number">171 Excel Sheet Column Number</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../169 Majority Element">169 Majority Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../168 Excel Sheet Column Title">168 Excel Sheet Column Title</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../166 Fraction to Recurring Decimal">166 Fraction to Recurring Decimal</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../165 Compare Version Numbers">165 Compare Version Numbers</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../164 Maximum Gap">164 Maximum Gap</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../162 Find Peak Element">162 Find Peak Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../160 Intersection of Two Linked Lists">160 Intersection of Two Linked Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../151 Reverse Words in a String">151 Reverse Words in a String</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../148 Sort List">148 Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../147 Insertion Sort List">147 Insertion Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../80 Remove Duplicates from Sorted Array II">80 Remove Duplicates from Sorted Array II</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../75 Sort Colors">75 Sort Colors</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../41 First Missing Positive">41 First Missing Positive</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../26 Remove Duplicates from Sorted Array">26 Remove Duplicates from Sorted Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../23 Merge k Sorted Lists">23 Merge k Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../21 Merge Two Sorted Lists">21 Merge Two Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../7 Reverse Integer">7 Reverse Integer</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">4 Median of Two Sorted Arrays</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>4 Median of Two Sorted Arrays</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h2 id="1">1、题目</h2>
+<p>There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).</p>
+<h2 id="2wepon">2、wepon的解法</h2>
+<h3 id="21">2.1 解析</h3>
+<p><strong>求两个已排序数组的中值，时间复杂度要求O(log(m+n))。</strong></p>
+<p>这是个经典的问题，更一般的问题是：求两个已排序数组中第k大的值。</p>
+<ul>
+<li>
+<p>最笨的方法：采用插入排序（二分查找优化），假如m&gt;n，则将n插入到m中，时间复杂度是O（n*logm）。排好序后输出第k个。</p>
+</li>
+<li>
+<p>线性复杂度的方法：其实我们只是要找出第k大的数，所以只需要排序前面k个数，不用排完所有数。可以使用类似与merge sort的方法，设置两个指针Pa、Pb和一个计数变量num，Pa和Pb分别指向数组A和B的首位，比较二者，较小的就输出，并且指针往前移一位，num++；再比较二者，小的输出......如此迭代进行，直到num==k。 这种方法时间复杂度是O(k)；【对本题来说为O（（m+n）/2）即O(m+n)】</p>
+</li>
+<li>
+<p>O(log (m+n))方法：O（k）方法是一个一个比的，可以用更快的方法，要找到A和B数组中第k大的数，可以比较A[k/2-1]以及B[k/2-1]，假如A[k/2-1]比较小，则说明A[0]~A[k/2-1]都小于第k大的数，删除这k/2个数，得到新的A'。接下来，问题转化为求A'和B中第k/2大的数........如此循环直到k/2=1.。 由 k/2^n=1推算得这个方法的复杂度是O(logk)。【对本题来说是O(log(m+n))】</p>
+</li>
+</ul>
+<p>需要注意的是，A或者B的个数不一定有k/2个，比如m&lt;k/2时，作为比较的数据应该是A[m]和B[k-m]，即满足[]内两个数加起来的和为k。可以这样： int ia=min(k/2,m),ib=k-ia;   比较A[ia] 与 B[ib]</p>
+<h3 id="22">2.2 代码</h3>
+<pre><code>class Solution {
+public:
+    double findMedianSortedArrays(int A[], int m, int B[], int n) {
+        //分m+n为偶数和奇数两种情况
+        int total=m+n;
+        if(total &amp; 0x1)   //奇数
+           return find_kth( A, m, B, n,total/2+1);
+        else
+           return (find_kth( A, m, B, n,total/2)+find_kth( A, m, B, n,total/2+1))/2.0;
+
+    }
+private:
+    static int find_kth(int A[],int m,int B[],int n,int k){
+            //规定传入的参数m&lt;=n
+            if(m&gt;n) return find_kth(B,n,A,m,k);    
+            if(m==0)  return B[k-1];    //一个为空
+            if(k==1)  return min(A[0],B[0]);
+            int ia=min(k/2,m),ib=k-ia;
+            if(A[ia-1]&lt;B[ib-1])  return find_kth(A+ia,m-ia,B,n,k-ia);
+            else if(A[ia-1]&gt;B[ib-1])  return find_kth(A,m,B+ib,n-ib,k-ib);
+            else return A[ia-1];
+             }
+};
+</code></pre>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../1 Two Sum" class="btn btn-neutral float-right" title="1 Two Sum"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../7 Reverse Integer" class="btn btn-neutral" title="7 Reverse Integer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../7 Reverse Integer" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../1 Two Sum" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

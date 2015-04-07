@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>41 First Missing Positive - LeetCode全解</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LeetCode全解</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../191 Number of 1 Bits">191 Number of 1 Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../190 Reverse Bits">190 Reverse Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../189 Rotate Array">189 Rotate Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../172 Factorial Trailing Zeroes">172 Factorial Trailing Zeroes</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../171 Excel Sheet Column Number">171 Excel Sheet Column Number</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../169 Majority Element">169 Majority Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../168 Excel Sheet Column Title">168 Excel Sheet Column Title</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../166 Fraction to Recurring Decimal">166 Fraction to Recurring Decimal</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../165 Compare Version Numbers">165 Compare Version Numbers</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../164 Maximum Gap">164 Maximum Gap</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../162 Find Peak Element">162 Find Peak Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../160 Intersection of Two Linked Lists">160 Intersection of Two Linked Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../151 Reverse Words in a String">151 Reverse Words in a String</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../148 Sort List">148 Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../147 Insertion Sort List">147 Insertion Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../80 Remove Duplicates from Sorted Array II">80 Remove Duplicates from Sorted Array II</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../75 Sort Colors">75 Sort Colors</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">41 First Missing Positive</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../26 Remove Duplicates from Sorted Array">26 Remove Duplicates from Sorted Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../23 Merge k Sorted Lists">23 Merge k Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../21 Merge Two Sorted Lists">21 Merge Two Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../7 Reverse Integer">7 Reverse Integer</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../4 Median of Two Sorted Arrays">4 Median of Two Sorted Arrays</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>41 First Missing Positive</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h2 id="1">1、题目</h2>
+<p>Given an unsorted integer array, find the first missing positive integer.</p>
+<p>For example,
+Given [1,2,0] return 3,
+and [3,4,-1,1] return 2.</p>
+<p>Your algorithm should run in O(n) time and uses constant space. </p>
+<h2 id="2wepon">2、wepon的解法</h2>
+<h3 id="21">2.1 解析</h3>
+<p>注意，[6,4,5]缺的第一个是1，[1,2,3]缺的第一个是4。多考虑几个测试用例，有助于自己对题目的理解。</p>
+<p>本题我想到的第一种是用哈希表的方法，思路如下面代码方法一中所述，非常简单，当然，空间复杂度O(n)，不符合要求。第二种方法，利用桶排序的思想，交换数组元素，使得数组中第i位存放的数值为(i+1)，即当A[i]!=i+1时，交换A[i]和A[A[i]-1]（直到没法交换为止，什么情况才算是没法交换？当A[i]&lt;=0或A[i]&gt;n时，A[i]-1就超出了数组边界，此时没法交换，当A[i]==A[A[i]-1]时，不用交换，也不能交换，否则造成程序死循环）。最后再判断数组中的一个A[i]不等于i+1的，返回i+1。</p>
+<h3 id="22">2.2 代码</h3>
+<p><strong>C++</strong></p>
+<pre><code>//哈希表法
+class Solution {
+public:
+    /*
+    建立一个哈希表Map&lt;int,bool&gt;，遍历一轮，将数组中有出现的数字（忽略负数）作为key，其val置为true，并且在这一轮遍历中，记下最小的数minnum
+    如果minnum不为0和1，则缺少的第一个正数就是1
+    其他情况，则从minnum开始，在哈希表中查找是否有该数,有的话，minnum++并继续查找，直到在哈希表中找不到minnum，输出该数
+    */
+    int firstMissingPositive(int A[], int n) {
+      //  if(n==0) return 1;
+        map&lt;int,bool&gt; Map;
+        int minnum=1;
+        for(int i=0;i&lt;n;i++)
+        {
+            if(A[i]&gt;=0) 
+            {
+            Map[A[i]]=true;
+            minnum=minnum&gt;A[i]?A[i]:minnum;
+            }
+        }
+        if(minnum!=1&amp;&amp;minnum!=0) return 1;
+        while(Map.find(minnum)!=Map.end()) minnum++;
+        return minnum; 
+    }
+};
+
+
+
+//桶排序的思想
+class Solution {
+public:
+    int firstMissingPositive(int A[], int n) {
+      bucket_sort(A,n);
+      for(int i=0;i&lt;n;i++)
+      {if(A[i]!=i+1)   return i+1;}
+      return n+1;
+    }
+private:
+     void bucket_sort(int A[],int n)
+     {
+         for(int i=0;i&lt;n;i++)
+           while(A[i]!=i+1)
+           {   
+               if(A[i]&lt;=0 || A[i]&gt;n || A[i]==A[A[i]-1] ) break;  //这三种情况都不能swap
+               swap(A[i],A[A[i]-1]);
+           }
+     }
+};
+</code></pre>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../26 Remove Duplicates from Sorted Array" class="btn btn-neutral float-right" title="26 Remove Duplicates from Sorted Array"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../75 Sort Colors" class="btn btn-neutral" title="75 Sort Colors"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../75 Sort Colors" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../26 Remove Duplicates from Sorted Array" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

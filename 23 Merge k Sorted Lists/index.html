@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>23 Merge k Sorted Lists - LeetCode全解</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LeetCode全解</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../191 Number of 1 Bits">191 Number of 1 Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../190 Reverse Bits">190 Reverse Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../189 Rotate Array">189 Rotate Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../172 Factorial Trailing Zeroes">172 Factorial Trailing Zeroes</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../171 Excel Sheet Column Number">171 Excel Sheet Column Number</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../169 Majority Element">169 Majority Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../168 Excel Sheet Column Title">168 Excel Sheet Column Title</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../166 Fraction to Recurring Decimal">166 Fraction to Recurring Decimal</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../165 Compare Version Numbers">165 Compare Version Numbers</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../164 Maximum Gap">164 Maximum Gap</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../162 Find Peak Element">162 Find Peak Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../160 Intersection of Two Linked Lists">160 Intersection of Two Linked Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../151 Reverse Words in a String">151 Reverse Words in a String</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../148 Sort List">148 Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../147 Insertion Sort List">147 Insertion Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../80 Remove Duplicates from Sorted Array II">80 Remove Duplicates from Sorted Array II</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../75 Sort Colors">75 Sort Colors</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../41 First Missing Positive">41 First Missing Positive</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../26 Remove Duplicates from Sorted Array">26 Remove Duplicates from Sorted Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">23 Merge k Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../21 Merge Two Sorted Lists">21 Merge Two Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../7 Reverse Integer">7 Reverse Integer</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../4 Median of Two Sorted Arrays">4 Median of Two Sorted Arrays</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>23 Merge k Sorted Lists</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h2 id="1">1、题目</h2>
+<p>Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity。</p>
+<h2 id="2wepon">2、wepon的解法</h2>
+<h3 id="21">2.1 解析</h3>
+<p>复用 <a href="">21.Merge Two Sorted Lists</a> 这道题所写的函数mergeTwoLists()。</p>
+<p>两种方法</p>
+<ul>
+<li>
+<p>一种是逐步地merge两个链表，形成新的链表，再将新的链表跟另一个链表merge，时间复杂度是O(n(n1+n2+n3....)) n是链表个数。【因为merge L1和L2花费O(L1+L2)，形成新的链表的长度为n1+n2，merge该新链表与L3花费O((n1+n2)+n3).....所以总的是O((n1+n2)+((n1+n2)+n3)+.......)】</p>
+</li>
+<li>
+<p>另外一种是用归并排序的思想，时间复杂度是O(logn(n1+n2+n3+......)),因为是两两merge，递归树有logn层，每一层的代价都为O(n1+n2+n3+......)。</p>
+</li>
+</ul>
+<h3 id="22">2.2 代码</h3>
+<p><strong>C++</strong></p>
+<pre><code>/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *mergeKLists(vector&lt;ListNode *&gt; &amp;lists) {
+
+       /*归并排序*/
+       int n=lists.size();
+       if(n==0) return nullptr;
+       if(n==1)  return lists[0];
+       vector&lt;ListNode *&gt; list_left;
+       vector&lt;ListNode *&gt; list_right;
+       auto iter=lists.begin();
+       for(;iter&lt;lists.begin()+n/2;iter++)
+           list_left.push_back(*iter);
+       for(;iter!=lists.end();iter++)
+           list_right.push_back(*iter);
+
+       ListNode *l1=mergeKLists(list_left);
+       ListNode *l2=mergeKLists(list_right);
+       return mergeTwoLists(l1,l2);
+    }
+private:
+   ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+        ListNode dummy(-1);
+        ListNode *head1=l1,*head2=l2,*tail=&amp;dummy;
+        while(head1!=nullptr &amp;&amp; head2!=nullptr)
+        {
+            if(head1-&gt;val&lt;head2-&gt;val) {tail-&gt;next=head1;head1=head1-&gt;next;}
+            else                      {tail-&gt;next=head2;head2=head2-&gt;next;}
+            tail=tail-&gt;next;
+        }
+        if(head1==nullptr)   tail-&gt;next=head2;
+        if(head2==nullptr)   tail-&gt;next=head1;  /*两句可以合并为 tail-&gt;next=head1==nullptr?head2:head1; */
+    return dummy.next;
+    }
+};
+</code></pre>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../21 Merge Two Sorted Lists" class="btn btn-neutral float-right" title="21 Merge Two Sorted Lists"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../26 Remove Duplicates from Sorted Array" class="btn btn-neutral" title="26 Remove Duplicates from Sorted Array"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../26 Remove Duplicates from Sorted Array" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../21 Merge Two Sorted Lists" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

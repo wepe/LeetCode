@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>166 Fraction to Recurring Decimal - LeetCode全解</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LeetCode全解</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../191 Number of 1 Bits">191 Number of 1 Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../190 Reverse Bits">190 Reverse Bits</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../189 Rotate Array">189 Rotate Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../172 Factorial Trailing Zeroes">172 Factorial Trailing Zeroes</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../171 Excel Sheet Column Number">171 Excel Sheet Column Number</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../169 Majority Element">169 Majority Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../168 Excel Sheet Column Title">168 Excel Sheet Column Title</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">166 Fraction to Recurring Decimal</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../165 Compare Version Numbers">165 Compare Version Numbers</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../164 Maximum Gap">164 Maximum Gap</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../162 Find Peak Element">162 Find Peak Element</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../160 Intersection of Two Linked Lists">160 Intersection of Two Linked Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../151 Reverse Words in a String">151 Reverse Words in a String</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../148 Sort List">148 Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../147 Insertion Sort List">147 Insertion Sort List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../80 Remove Duplicates from Sorted Array II">80 Remove Duplicates from Sorted Array II</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../75 Sort Colors">75 Sort Colors</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../41 First Missing Positive">41 First Missing Positive</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../26 Remove Duplicates from Sorted Array">26 Remove Duplicates from Sorted Array</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../23 Merge k Sorted Lists">23 Merge k Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../21 Merge Two Sorted Lists">21 Merge Two Sorted Lists</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../7 Reverse Integer">7 Reverse Integer</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../4 Median of Two Sorted Arrays">4 Median of Two Sorted Arrays</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../1 Two Sum">1 Two Sum</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>166 Fraction to Recurring Decimal</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h2 id="1">1、题目</h2>
+<p>Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.</p>
+<p>If the fractional part is repeating, enclose the repeating part in parentheses.</p>
+<p>For example,</p>
+<ul>
+<li>Given numerator = 1, denominator = 2, return "0.5".</li>
+<li>Given numerator = 2, denominator = 1, return "2".</li>
+<li>Given numerator = 2, denominator = 3, return "0.(6)".</li>
+</ul>
+<h2 id="wepon">wepon的解法</h2>
+<h3 id="21">2.1 解析</h3>
+<h3 id="22">2.2 代码</h3>
+<p><strong>C++</strong></p>
+<pre><code>/*
+题目解析请参考博客：http://blog.csdn.net/u012162613/article/details/41998617
+*/
+
+class Solution {
+public:
+    string fractionToDecimal(int numerator, int denominator) {
+        if(numerator==0) return "0";
+        string result;
+        if(numerator&lt;0 ^ denominator&lt;0 ) result+='-';   //异或，numerator&lt;0和denominator&lt;0仅有一个为真
+        //转化为正数，INT_MIN转化为正数会溢出，故用long long。long long int n=abs(INT_MIN)得到的n仍然是负的，所以写成下面的形式。
+        long long int n=numerator,d=denominator;
+        n=abs(n);d=abs(d);
+
+        result+=to_string(n/d);  //整数部分
+        long long int r=n%d;    //余数r
+        if(r==0) return result;
+        else result+='.';
+        //下面处理小数部分，用哈希表
+        unordered_map&lt;int,int&gt; map;
+        while(r){
+            //检查余数r是否在哈希表中，是的话则开始循环了
+            if(map.find(r)!=map.end()){
+                result.insert(map[r],1,'(');   //http://www.cplusplus.com/reference/string/basic_string/insert/
+                result+=')';
+                break;
+            }
+            map[r]=result.size();    //这个余数对应于result的哪个位置
+            //正常运算
+            r*=10;
+            result+=to_string(r/d);
+            r=r%d;
+        }
+        return result;
+    }
+};
+</code></pre>
+<h2 id="3-_">3、有更好的解法？快来占位吧 ^_^</h2>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../165 Compare Version Numbers" class="btn btn-neutral float-right" title="165 Compare Version Numbers"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../168 Excel Sheet Column Title" class="btn btn-neutral" title="168 Excel Sheet Column Title"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../168 Excel Sheet Column Title" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../165 Compare Version Numbers" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
