@@ -253,6 +253,16 @@ If this function is called many times, how would you optimize it?</p>
 <p>Related problem: Reverse Integer</p>
 <h2 id="2wepon">2、wepon的解法</h2>
 <h3 id="21">2.1 解析</h3>
+<p>这是一道很简单的题目。题意是给定一个整数，要求返回这个整数的二进制形式“反转”之后所得到的整数。看下面的例子，一目了然：</p>
+<ul>
+<li>
+<p>整数5的二进制表示为“000...00101”，即2^0+2^2=5</p>
+</li>
+<li>
+<p>整数5的二进制形式反转之后为“101000..000”，得到的整数为2^31+2^29= 2684354560</p>
+</li>
+</ul>
+<p>也就是说，原先指数为0的，反转后指数为31；原先指数为2的，反转后指数为29....以此类推。</p>
 <h3 id="22">2.2 代码</h3>
 <p><strong>C++</strong></p>
 <pre><code>class Solution {
