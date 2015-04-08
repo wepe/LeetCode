@@ -1,41 +1,11 @@
-Solutions-for-Leetcode
-======================
+##关于LeetCode全解
 
-This project will update detailed solutions for the problems on Leetcode. Problems are classified by the algrithom or data structure they use,and puted into different folders.
-
-For every problem,I will try different solutions and discuss it on my blog. Furthermore,I will use different programming languages for every problem.
-
-My blog(chinese):http://blog.csdn.net/u012162613
+这个项目陆续收录LeetCode上所有题目的解题方法，不同解法，不同编程语言。倡导更多的人在刷题的同时将解题思路发布到项目主页：[http://wepe.github.io/LeetCode/](http://wepe.github.io/LeetCode/)
 
 
+##加入我们
+欢迎将你的解题思路发布到本项目主页上，你的贡献将方便更多刷题的人。
 
-Problem----(Folder)
----
+**参与方式:**  如果你是Github用户，请fork本项目，将你的解题思路和代码整理成文档（最好是markdown格式），放入`contribute`文件夹下，文档命名规则及写作风格请参照`stable`文件夹下的文档。如果你不是Github用户，也欢迎你将解题思路和代码整理成文档，发送到:masterwepon@163.com
 
-1.Two Sum ----(Hash table)  **[code]()**
 
-7.Reverse Integer ----(Math)  **[code]()**
-
-151.Reverse Words in a String ----(String)  **[code]()**
-
-160.Intersection of Two Linked Lists ----(Linked List)  **[code]()**
-
-162.Find Peak Element----(Divide and Conquer)  **[code]()**
-
-165.Compare Version Numbers----(String)  **[code]()**
-
-166.Fraction to Recurring Decimal----(Hash table) **[code]()**
-
-168.Excel Sheet Column Title----(Math) **[code]()**
-
-169.Majority Element----(Hash table) **[code]()**
-
-171.Excel Sheet Column Number----(Math) **[code]()**
-
-172.Factorial Trailing Zeroes----(Math) **[code]()**
-
-189.Rotate Array ----(Array) **[code]()**
- 
-190.Reverse Bits ----(Others) **[code]()**
-
-191.Number of 1 Bits ----(Others) **[code]()**
