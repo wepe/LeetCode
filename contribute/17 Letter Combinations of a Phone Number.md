@@ -1,13 +1,13 @@
 1、题目
 Letter Combinations of a Phone Number
 
-2、解法
+##2、解法
 
-2.1 解析
-用python中字典的方法，将电话号码的键和对应的字母存储到字典中，使用python的reduce函数和lambda一实现。
+###2.1 解析
+###用python中字典的方法，将电话号码的键和对应的字母存储到字典中，使用python的reduce函数和lambda一实现。
 
 2.2 code
-python
+**python**
 
 class Solution:
     # @return a list of strings, [s1, s2]
