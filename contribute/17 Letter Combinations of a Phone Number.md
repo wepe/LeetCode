@@ -8,7 +8,7 @@ Letter Combinations of a Phone Number
 
 2.2 code
 **python**
-
+<pre><code>
 class Solution:
     # @return a list of strings, [s1, s2]
     # @param {string} digits
@@ -26,3 +26,4 @@ class Solution:
             '9': 'wxyz'
         }
         return reduce(lambda acc, digit: [x + y for x in acc for y in kvmaps[digit]], digits, [''])
+</code></pre>
