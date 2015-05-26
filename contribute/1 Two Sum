@@ -1,0 +1,42 @@
+1、题目
+Given an array of integers, find two numbers such that they add up to a specific target number.
+
+The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+
+You may assume that each input would have exactly one solution.
+example
+Input: numbers={2, 7, 11, 15}, target=9
+Output: index1=1, index2=2
+
+##2、解法
+
+###2.1 解析
+###用map存贮数组中对应的值和下标（注意题目中要求下标从1开始），用STL的find函数寻找数组的下标，并存入map中。
+
+2.2 code
+**C++**
+<pre><code>
+class Solution {
+public:
+    vector<int> twoSum(vector<int> &numbers, int target) {
+        vector<int> ret;
+        if(numbers.size() == 0)
+            return ret;
+        map<int, int>numbersMap;
+        map<int, int>::iterator iter;
+        for(int i=0; i<numbers.size(); ++i)
+        {
+            iter = numbersMap.find(target -numbers[i]);
+            if(iter != numbersMap.end())
+            {
+                ret.push_back(iter->second);
+                ret.push_back(i+1);
+                break;
+            }
+            else{
+                	numbersMap[numbers[i]] = i + 1;
+            }
+        }
+    }
+};
+</code></pre>
